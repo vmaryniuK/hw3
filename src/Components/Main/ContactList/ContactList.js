@@ -8,7 +8,7 @@ import { UpdateContactList } from "../../../Actions/ContactListActions";
 const ContactList = ({ List, UpdateContactList }) => {
   useEffect(() => {
     API.GetContactList().then(data => {
-      UpdateContactList(data);
+      UpdateContactList(data)
     });
   }, []);
 
